@@ -1,0 +1,1 @@
+15 * * * * root cd /repositories; /bin/synchronize.sh | ts >> /var/log/cron.log 2>&1

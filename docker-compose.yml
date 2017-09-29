@@ -1,0 +1,4 @@
+gitlabsynchronizer:
+ build: ./
+ volumes:
+  - ./:/repositories
