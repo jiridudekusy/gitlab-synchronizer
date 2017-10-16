@@ -12,6 +12,7 @@ do
       cd $REPO_DIR
       echo "Fetch data from Gitlab"
       git fetch --progress origin
+      git remote prune origin
       echo "Push data to Codebase/UDC"
       export GIT_SSH_COMMAND="ssh -oStrictHostKeyChecking=no -i ../ssh_key -F /dev/null"
       git push --progress target
